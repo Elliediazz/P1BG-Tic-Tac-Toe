@@ -1,13 +1,15 @@
-//Place for Player 1 and Player 2 to enter their names
+//place for Player 1 and Player 2 to enter their names
+let playerOne = window.prompt ('Player One Name:');
+alert ("Your Name is " +playerOne);
 
 //randommize which player begins 
 
 //Player 1 chooses "X" or "O"
 
-//If player 1 choosed "X" then player 2 is assigned "O" 
+//if player 1 choosed "X" then player 2 is assigned "O" 
 //else player if player 1 chooses "O" then player 2 is assigned "X"
 
-// Diplay the players assigned mark next to their name
+// diplay the players assigned mark next to their name
 
 //the player who chose last, makes the first move
 
