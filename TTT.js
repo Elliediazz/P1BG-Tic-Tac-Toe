@@ -1,6 +1,13 @@
 //place for Player 1 and Player 2 to enter their names
-let playerOne = window.prompt ('Player One Name:');
-alert ("Your Name is " +playerOne);
+    document.getElementById ("playerOne").addEventListener("click", function(){
+        let playerOne = window.prompt("PLAYER ONE")
+        document.getElementById("outputPlayerOne").innerHTML = playerOne
+    })
+
+    document.getElementById ("playerTwo").addEventListener("click", function(){
+        let playerTwo = window.prompt("PLAYER ONE")
+        document.getElementById("outputPlayerTwo").innerHTML = playerTwo
+    })
 
 //randommize which player begins 
 
@@ -14,6 +21,10 @@ alert ("Your Name is " +playerOne);
 //the player who chose last, makes the first move
 
 // if player 1 clicks a certain area of the board, their designated mark will appear
+let boardOne=document.getElementById("board1")
+boardOne.addEventListener("click", function(){
+        alert ("hello World!")
+    })
 
 //turns switch
 

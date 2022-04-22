@@ -6,6 +6,7 @@
     min-height: 100%;
 }
 
+/*
 #board{
     position: center;
     min-width: 20vh;
@@ -14,5 +15,38 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+background-image: url(./assets/BackgroundImage.jpg) ;
+*/
+
+body {
+    margin: 30px;
+    background-image: url(./assets/BackgroundImage.jpg) ;
+}
+
+.parent{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    margin: 20vw;
+    margin-right: 20vw;
+    margin-top: 20vh;
     
 }
+.parent > div {
+    padding: 10px;
+    background-color: darkcyan;
+    opacity: .7;
+}
+
+h2{
+    color: azure;
+    display: flex;
+}
+
