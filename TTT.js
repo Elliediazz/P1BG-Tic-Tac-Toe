@@ -21,10 +21,26 @@
 //the player who chose last, makes the first move
 
 // if player 1 clicks a certain area of the board, their designated mark will appear
-let boardOne=document.getElementById("board1")
-boardOne.addEventListener("click", function(){
-        alert ("hello World!")
-    })
+let myBoardArray = [
+    document.getElementById("board1"),
+    document.getElementById("board2"),
+    document.getElementById("board3"),
+    document.getElementById("board4"),
+    document.getElementById("board5"),
+    document.getElementById("board6"),
+    document.getElementById("board7"),
+    document.getElementById("board8"),
+    document.getElementById("board9"),
+]
+
+function markBoard(){
+    alert("hello")
+}
+
+for (let i=0; i < myBoardArray.length; i++){
+    myBoardArray.addEventListener("click", function(){markBoard();})
+}
+
 
 //turns switch
 
