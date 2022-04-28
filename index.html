@@ -12,28 +12,23 @@
     <h1>Tic-Tac-Toe</h1>
     
     <div id= "parent" class="parent">
+        <div id="board0" class="board borderRight borderBottom"></div>
         <div id="board1" class="board borderRight borderBottom"></div>
-        <div id="board2" class="board borderRight borderBottom"></div>
-        <div id="board3" class="board borderBottom"></div>
+        <div id="board2" class="board borderBottom"></div>
+        <div id="board3" class="board borderRight borderBottom"></div>
         <div id="board4" class="board borderRight borderBottom"></div>
-        <div id="board5" class="board borderRight borderBottom"></div>
-        <div id="board6" class="board borderBottom"></div>
+        <div id="board5" class="board borderBottom"></div>
+        <div id="board6" class="board borderRight"></div>
         <div id="board7" class="board borderRight"></div>
-        <div id="board8" class="board borderRight"></div>
-        <div id="board9" class="board"></div>
+        <div id="board8" class="board"></div>
     </div>
     <br>
 
-    <div>
-        <button id = "playerOne"> Player One </button>
-        <button id = "playerTwo"> Player Two </button>
+    <div class="restartGame">
+        <h2 id="winner">Winner is </h2>
+        <button id="restartBtn">Restart Game</button>
     </div>
 
-    <div id="playerNames">
-        <h2>PLAYER ONE: <span id = "outputplayerOne">____________</span></h2>
-        <h2>PLAYER TWO: <span id = "outputplayerTwo">____________</span></h2> 
-    </div>  
-
-<script src="./TTT.js"></script>
+<script src="TTT.js"></script>
 </body>
-</html>
+</html> 

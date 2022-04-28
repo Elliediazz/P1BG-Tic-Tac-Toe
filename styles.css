@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: darkcyan;
 }
 
 .parent{
@@ -14,27 +15,47 @@ body {
     cursor: pointer;
 }
 .board {
-    color: rgb(84, 201, 162);
+    color: currentColor;
     font-size: 2em;
     opacity: .7;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-h2{
-    color: azure;
-    display: flex;
-    flex-direction: row;
-}
 h1{
-    color: darkcyan;
+    color: currentColor;
 }
 .borderRight{
-    border-right: .25em solid darkcyan;
+    border-right: .25em solid currentColor;
     opacity: .7;
 }
 .borderBottom{
-    border-bottom: .25em solid darkcyan;
+    border-bottom: .25em solid currentColor;
     opacity: .7;
+}
+#restartBtn{
+    background-color: transparent;
+    color: currentColor;
+    border: .1em currentColor solid;
+    font-size: 1em;
+    padding: 10px;
+}
+button:active {
+    background: transparent;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+    outline: none;
+  }
+.restartGame{
+    border: .25em currentColor solid;
+    padding: 10px;
+    text-align: center;
+    width: 25%;
+}
+#visible {
+    display: block;
+}
+#hide{
+    display: none;
 }
