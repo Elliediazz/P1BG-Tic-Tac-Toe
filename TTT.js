@@ -1,4 +1,3 @@
-//defining variables
 let turn = 'X';
  
 //created an array for me for which i can use to loop over when clicked
@@ -14,8 +13,8 @@ const boards = document.querySelectorAll('.board')
             //write a function to make  'X'/'O' appear and switch turns
             //console.log('POW!!!')
             let board= event.target;
-            let boardNumber = board.dataset.index; // **research this** data index allows us to store extra information w/o extra properties in DOM (mdn)
-                if (board.innerHTML != "")
+            let boardNumber = board.dataset.index; // **research** data index allows us to store extra information w/o extra properties in DOM (mdn)
+                if (board.innerHTML != '')
                 return;
 
             // updated conditional to check status of div
@@ -47,7 +46,6 @@ const boards = document.querySelectorAll('.board')
                 boardMark.fill(null);
                 board.innerHTML= null;
                 turn = 'X';
-                checkWinner = null;
             })
    
     }) 
@@ -74,6 +72,7 @@ function checkWinner() {
         boardValue0 === boardValue2
         ){
         window.alert('winner!');
+        return;
     }
 
     if (
@@ -82,6 +81,7 @@ function checkWinner() {
         boardValue3 === boardValue5
         ){
         window.alert('winner!');
+        return;
     }
 
     if (
@@ -90,6 +90,7 @@ function checkWinner() {
         boardValue6 === boardValue8
         ){
         window.alert('winner!');
+        return;
     }
 
     if (
@@ -98,6 +99,7 @@ function checkWinner() {
         boardValue0 === boardValue6
         ){
         window.alert('winner!');
+        return;
     }
 
     if (
@@ -106,6 +108,7 @@ function checkWinner() {
         boardValue1 === boardValue7
         ){
         window.alert('winner!');
+        return;
     }
 
     if (
@@ -114,6 +117,7 @@ function checkWinner() {
         boardValue2 === boardValue8
         ){
         window.alert('winner!');
+        return;
     }
 
     if (
@@ -122,14 +126,16 @@ function checkWinner() {
         boardValue0 === boardValue8
         ){
         window.alert('winner!');
+        return;
     }
 
     if (
         boardValue2 != null && 
         boardValue2 === boardValue4 && 
         boardValue2 === boardValue6
-        ){
+        ) {
         window.alert('winner!');
+        return;
     }
     
     

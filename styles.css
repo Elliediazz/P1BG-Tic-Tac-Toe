@@ -40,22 +40,9 @@ h1{
     font-size: 1em;
     padding: 10px;
 }
-button:active {
-    background: transparent;
-    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
-    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
-    box-shadow: inset 0px 0px 5px #c1c1c1;
-    outline: none;
-  }
 .restartGame{
     border: .25em currentColor solid;
     padding: 10px;
     text-align: center;
     width: 25%;
-}
-#visible {
-    display: block;
-}
-#hide{
-    display: none;
 }
